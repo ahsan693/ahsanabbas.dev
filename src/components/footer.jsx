@@ -40,7 +40,7 @@ export const Footer = () => {
           <div className="icon">
             <a
               className=""
-              href="https://www.linkedin.com/in/ahsan693/"
+              href="https://www.linkedin.com/in/ahsan-abbas-953a41371"
               target="_blank"
             >
               <img
