@@ -97,72 +97,73 @@ export const Education = () => {
   const [inView, setInView] = useState(false);
 
   return (
-    <div id="Education" className="flex justify-center relative">
-      <div className="education-section w-full flex flex-col relative max-w-[60rem] py-16 md:py-24">
-        {/* ambient background glow, echoes the hero illustration accent */}
-        <div className="pointer-events-none absolute -top-10 -right-10 w-72 h-72 bg-fontBlue/10 blur-3xl rounded-full" />
-        <div className="pointer-events-none absolute bottom-0 -left-10 w-64 h-64 bg-color1/10 blur-3xl rounded-full" />
+    <div id="Education" className="flex justify-center relative overflow-hidden">
+      <div className="education-section w-full flex flex-col relative max-w-[60rem] px-5 py-16 sm:px-8 md:py-24">
+        
+        {/* Ambient background glow */}
+        <div className="pointer-events-none absolute -right-10 -top-10 h-72 w-72 rounded-full bg-fontBlue/10 blur-3xl" />
+        <div className="pointer-events-none absolute -left-10 bottom-0 h-64 w-64 rounded-full bg-color1/10 blur-3xl" />
 
         <motion.div
-          initial={{ opacity: 0, scale: 2 }}
+          initial={{ opacity: 0, scale: 1.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           onViewportEnter={() => setInView(true)}
           onViewportLeave={() => setInView(false)}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="project-title z-10 text-white text-6xl md:text-8xl tracking-tight font-semibold uppercase flex justify-center items-center animate-pulse will-change-transform will-change-opacity mb-24 md:mb-36"
+          className="project-title relative z-10 mb-20 flex items-center justify-center text-5xl font-semibold uppercase tracking-tight text-white will-change-transform will-change-opacity sm:text-6xl md:mb-32 md:text-8xl"
         >
-          <div className="bg-color1/40 rounded-full absolute size-40 blur-[50px] z-10"></div>
-          Education
+          <div className="absolute z-10 size-32 rounded-full bg-color1/40 blur-[50px] md:size-40"></div>
+          <span className="relative z-20">Education</span>
         </motion.div>
 
-        <div className="relative pl-5">
-          {/* vertical timeline line */}
+        <div className="relative">
+          {/* Vertical timeline line - precisely aligned to icon centers */}
           <motion.div
             initial={{ scaleY: 0 }}
             whileInView={{ scaleY: 1 }}
             transition={{ duration: 1.2 }}
             style={{ originY: 0 }}
-            className="absolute left-[1.65rem] top-2 bottom-2 w-[2px] bg-gradient-to-b from-fontBlue via-color2/60 to-transparent"
+            className="absolute bottom-2 left-[1.35rem] top-2 w-[2px] bg-gradient-to-b from-fontBlue via-color2/60 to-transparent md:left-[1.65rem]"
           />
 
-          <div className="flex flex-col gap-10 md:gap-14">
+          <div className="flex flex-col gap-12 md:gap-16">
             {education.map((edu, index) => (
               <motion.div
                 key={edu.degree}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="relative flex gap-5 md:gap-8"
+                className="relative flex gap-5 sm:gap-6 md:gap-8"
               >
-                {/* icon node on the timeline */}
+                {/* Icon node on the timeline */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.15 + 0.2 }}
-                  className="relative z-10 shrink-0 w-11 h-11 md:w-14 md:h-14 rounded-full bg-color3 border-2 border-color2 text-color2 flex items-center justify-center"
+                  className="relative z-10 flex shrink-0 h-11 w-11 items-center justify-center rounded-full border-2 border-color2 bg-color3 text-color2 md:h-14 md:w-14"
                 >
-                  <span className="w-5 h-5 md:w-6 md:h-6">
+                  <span className="h-5 w-5 md:h-6 md:w-6">
                     {icons[edu.icon]}
                   </span>
                 </motion.div>
 
-                <div className="flex flex-col text-white tracking-wide gap-1 pb-2">
+                <div className="flex flex-col gap-1 pb-2 tracking-wide text-white">
                   <div className="flex flex-col md:flex-row md:items-baseline md:gap-3">
-                    <span className="font-semibold text-2xl md:text-4xl">
+                    <span className="text-xl font-bold leading-tight sm:text-2xl md:text-3xl">
                       {edu.degree}
                     </span>
                     {edu.duration && (
-                      <span className="text-color2 font-semibold text-[10px] md:text-sm uppercase tracking-widest">
+                      <span className="mt-1 text-xs font-semibold uppercase tracking-widest text-color2 sm:text-sm md:mt-0">
                         {edu.duration}
                       </span>
                     )}
                   </div>
-                  <span className="bg-fontBlue text-transparent bg-clip-text font-semibold text-[10px] md:text-sm">
+                  <span className="text-sm font-semibold text-transparent bg-clip-text bg-fontBlue sm:text-base">
                     {edu.institution}
                   </span>
 
                   {edu.points.length > 0 && (
-                    <ul className="mt-2 flex flex-col gap-1.5">
+                    <ul className="mt-3 flex flex-col gap-2">
                       {edu.points.map((point, i) => (
                         <motion.li
                           key={i}
@@ -172,9 +173,9 @@ export const Education = () => {
                             duration: 0.5,
                             delay: index * 0.15 + 0.3 + i * 0.05,
                           }}
-                          className="text-[#989898] font-normal text-[10px] md:text-sm md:w-[85%] flex gap-2"
+                          className="flex gap-2 text-xs font-medium leading-relaxed text-[#c4c4c4] sm:text-sm md:w-[90%]"
                         >
-                          <span className="text-fontBlue mt-[2px]">–</span>
+                          <span className="mt-[2px] text-fontBlue">–</span>
                           <span>{point}</span>
                         </motion.li>
                       ))}
@@ -185,6 +186,7 @@ export const Education = () => {
             ))}
           </div>
         </div>
+        
       </div>
     </div>
   );
