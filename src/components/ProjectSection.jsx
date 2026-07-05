@@ -62,6 +62,7 @@ export const ProjectSection = () => {
                   handleInsightPanel(status, project)
                 }
                 githubLink={project.githubLink}
+                liveLink={project.liveLink}
               />
             );
           })}

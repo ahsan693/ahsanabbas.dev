@@ -36,8 +36,8 @@ export const Projects = {
       techStack: [react, js],
       reportLink: "",
     },
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/ahsan693/Dropline-Media",
+    liveLink: "https://dropline-media-fsj6.vercel.app/",
   },
 
   LuxeWear: {
@@ -50,8 +50,8 @@ export const Projects = {
       techStack: [react, node, md, css],
       reportLink: "",
     },
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/ahsan693/Luxewear",
+    liveLink: "https://luxewear-rose.vercel.app/",
   },
 
   MonalRestaurant: {
@@ -64,8 +64,8 @@ export const Projects = {
       techStack: [react, js, css],
       reportLink: "",
     },
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/ahsan693/Resturant",
+    liveLink: "https://resturant-five-kappa.vercel.app/",
   },
 
   LaundryCity: {
@@ -78,8 +78,8 @@ export const Projects = {
       techStack: [react, node, md],
       reportLink: "",
     },
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/ahsan693/Laundry-management-system-react-js-",
+    liveLink: "https://laundry-management-system-react-js.vercel.app/",
   },
 
   IndusMotors: {
@@ -92,8 +92,8 @@ export const Projects = {
       techStack: [react, node, md],
       reportLink: "",
     },
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/ahsan693/indus-motor-group",
+    liveLink: "https://indus-motor-group.vercel.app/",
   },
 
   IrishNetIncomeCalculator: {
@@ -106,7 +106,7 @@ export const Projects = {
       techStack: [react, js, css],
       reportLink: "",
     },
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/ahsan693/irish-tax-calculator",
+    liveLink: "https://irish-net-salary-calculator.vercel.app/",
   },
 };
