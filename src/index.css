@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  font-size: 125%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.custom-radius {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+section,
+#Projects,
+#Contact,
+#Home,
+#Experience,
+#Education,
+#About {
+  scroll-margin-top: 6rem;
+}
+
+.section-shell {
+  @apply w-full px-4 sm:px-6 lg:px-0 max-w-[60rem];
+}
+
+.section-gap {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.section-gap-sm {
+  @apply py-12 sm:py-16 lg:py-20;
+}
+
+.mobile-safe {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+.custom-stroke {
+  stroke: red !important;
+}
