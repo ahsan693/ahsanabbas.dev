@@ -112,7 +112,7 @@ export const HeroSect = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                href="www.linkedin.com/in/ahsan-abbas-953a41371"
+              href="https://www.linkedin.com/in/ahsan-abbas-953a41371"
                 target="_blank"
                 rel="noreferrer"
               >
