@@ -112,7 +112,7 @@ export const HeroSect = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                href="https://www.linkedin.com/in/irfan-naikwade/"
+                href="www.linkedin.com/in/ahsan-abbas-953a41371"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -126,7 +126,7 @@ export const HeroSect = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}
-                href="https://github.com/IrfanNaikwade28"
+                href="https://github.com/ahsan693"
                 target="_blank"
                 rel="noreferrer"
               >
