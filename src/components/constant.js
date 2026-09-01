@@ -6,7 +6,7 @@ import cpp from "../assets/icons/skills-icon/cpp.svg";
 import css from "../assets/icons/skills-icon/css.svg";
 // import figma from "../assets/icons/skills-icon/figma.svg";
 import md from "../assets/icons/skills-icon/mongodb.svg";
-// import next from "../assets/icons/skills-icon/nextjs.svg";
+import nextjs from "../assets/icons/skills-icon/nextjs.svg";
 import node from "../assets/icons/skills-icon/nodejs.svg";
 import py from "../assets/icons/skills-icon/python.svg";
 import react from "../assets/icons/skills-icon/react-js.svg";
@@ -16,11 +16,10 @@ import ml from "../assets/icons/skills-icon/ml.png";
 
 // projectImagess
 import dropline  from "../assets/images/projectImages/dropline.PNG";
-import luxewear from "../assets/images/projectImages/luxewear.PNG";
-import monal from "../assets/images/projectImages/monal.PNG";
-import laundrycity from "../assets/images/projectImages/laundry.PNG";
+import gallery23 from "../assets/images/projectImages/gallery23.PNG";
+import sarlamAthletics from "../assets/images/projectImages/sarlamathletics.PNG";
+import travelMommy from "../assets/images/projectImages/travelmommy.PNG";
 import indusmotors from "../assets/images/projectImages/indus motors.PNG";
-import irishcalculator from "../assets/images/projectImages/irish calculator.PNG";
 
 
 
@@ -40,46 +39,46 @@ export const Projects = {
     liveLink: "https://dropline-media-fsj6.vercel.app/",
   },
 
-  LuxeWear: {
-    image: luxewear,
-    title: "LuxeWear Clothing",
-    subTitle: "Fashion Shopping Website",
+  Gallery23: {
+    image: gallery23,
+    title: "Gallery23 Ireland",
+    subTitle: "Custom Framing & Fine Art Printing Website",
     insights: {
-      desc: `Fashion brands need high-conversion product presentation with a clean and responsive storefront experience.`,
-      category: "E-Commerce",
-      techStack: [react, node, md, css],
+      desc: `Fine art and framing businesses need an elegant, gallery-like presentation with pixel-perfect responsive layouts across services.`,
+      category: "Art & Framing, Website",
+      techStack: [nextjs, tailwind],
       reportLink: "",
     },
-    githubLink: "https://github.com/ahsan693/Luxewear",
-    liveLink: "https://luxewear-rose.vercel.app/",
+    githubLink: "https://github.com/ahsan693/Art-Gallary23-Ireland",
+    liveLink: "https://art-gallary23-ireland.vercel.app/",
   },
 
-  MonalRestaurant: {
-    image: monal,
-    title: "Monal Restaurant",
-    subTitle: "Restaurant Website",
+  SarlamAthletics: {
+    image: sarlamAthletics,
+    title: "Sarlam Athletics",
+    subTitle: "Combat Sports Equipment Manufacturer Website",
     insights: {
-      desc: `Restaurant websites should guide visitors toward reservations with a clear menu-first experience.`,
-      category: "Restaurant",
-      techStack: [react, js, css],
+      desc: `Private-label sports equipment brands need a bold, product-focused storefront with detailed listings and a custom design system.`,
+      category: "E-Commerce, Sports",
+      techStack: [nextjs, tailwind],
       reportLink: "",
     },
-    githubLink: "https://github.com/ahsan693/Resturant",
-    liveLink: "https://resturant-five-kappa.vercel.app/",
+    githubLink: "https://github.com/ahsan693/Sarlam-Athletics",
+    liveLink: "https://sarlam-athletics.vercel.app/",
   },
 
-  LaundryCity: {
-    image: laundrycity,
-    title: "LaundryCity",
-    subTitle: "Laundry Service App",
+  TravelMommy: {
+    image: travelMommy,
+    title: "TravelMommy",
+    subTitle: "Travel Comparison Website",
     insights: {
-      desc: `Service businesses need transparent order tracking with scheduling and workflow management.`,
-      category: "Service Platform",
-      techStack: [react, node, md],
+      desc: `Travel platforms need fast, comparison-driven search across flights, hotels, and routes with a clean booking-focused UI.`,
+      category: "Travel, Website",
+      techStack: [nextjs, tailwind],
       reportLink: "",
     },
-    githubLink: "https://github.com/ahsan693/Laundry-management-system-react-js-",
-    liveLink: "https://laundry-management-system-react-js.vercel.app/",
+    githubLink: "https://github.com/ahsan693/Travel-Agency",
+    liveLink: "https://travel-agency-ten-orpin.vercel.app/",
   },
 
   IndusMotors: {
@@ -94,19 +93,5 @@ export const Projects = {
     },
     githubLink: "https://github.com/ahsan693/indus-motor-group",
     liveLink: "https://indus-motor-group.vercel.app/",
-  },
-
-  IrishNetIncomeCalculator: {
-    image: irishcalculator,
-    title: "Irish Net Income Calculator",
-    subTitle: "Salary Calculator",
-    insights: {
-      desc: `A real-time calculator that estimates Irish net salary with tax and deduction breakdowns.`,
-      category: "Finance Tool",
-      techStack: [react, js, css],
-      reportLink: "",
-    },
-    githubLink: "https://github.com/ahsan693/irish-tax-calculator",
-    liveLink: "https://irish-net-salary-calculator.vercel.app/",
   },
 };
