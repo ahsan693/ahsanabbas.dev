@@ -36,7 +36,7 @@ export const Projects = {
       reportLink: "",
     },
     githubLink: "https://github.com/ahsan693/Dropline-Media",
-    liveLink: "https://dropline-media-fsj6.vercel.app/",
+    liveLink: "https://www.droplinemedia.com/",
   },
 
   Gallery23: {
@@ -64,7 +64,7 @@ export const Projects = {
       reportLink: "",
     },
     githubLink: "https://github.com/ahsan693/Sarlam-Athletics",
-    liveLink: "https://sarlam-athletics.vercel.app/",
+    liveLink: "https://www.sarlamathletics.com/",
   },
 
   TravelMommy: {
@@ -92,6 +92,6 @@ export const Projects = {
       reportLink: "",
     },
     githubLink: "https://github.com/ahsan693/indus-motor-group",
-    liveLink: "https://indus-motor-group.vercel.app/",
+    liveLink: "https://www.indusmotorgroup.ie//",
   },
 };
